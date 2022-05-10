@@ -48,12 +48,22 @@ public class Notice {
 		this.createDate = createDate;
 	}
 
-	
+	// 공지사항 상세조회용 생성자 생성
+	public Notice(int noticeNo, String noticeTitle, String noticeContent, String noticeWriter, Date createDate) {
+		super();
+		this.noticeNo = noticeNo;
+		this.noticeTitle = noticeTitle;
+		this.noticeContent = noticeContent;
+		this.noticeWriter = noticeWriter;
+		this.createDate = createDate;
+	}
+
 	
 	// 메소드부
 	public int getNoticeNo() {
 		return noticeNo;
 	}
+
 
 	public void setNoticeNo(int noticeNo) {
 		this.noticeNo = noticeNo;
